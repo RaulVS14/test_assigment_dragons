@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="lib/mocha.css" />
+    <title>Tests page</title>
+</head>
+<body>
+
+<div id="mocha"></div>
+<script src="script.js"></script>
+<script src="lib/chai.js"></script>
+<script src="lib/mocha.js"></script>
+<script class="mocha-init">
+    mocha.setup('bdd');
+    mocha.checkLeaks();
+</script>
+<script src="test_files/test_create_gameBoard.js"></script>
+<script class="mocha-exec">
+    mocha.run();
+</script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+let newGame = new Game('#game-container');
