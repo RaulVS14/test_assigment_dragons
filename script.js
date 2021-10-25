@@ -370,6 +370,7 @@ class Game {
 
     //  Click Event OPEN STORE
     async openStore() {
+        this.store_container.querySelector('.close').style.color = "white";
         this.gameboard.appendChild(this.store_container);
         await this.storeUpdate();
     }
